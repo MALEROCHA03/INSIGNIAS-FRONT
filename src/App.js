@@ -1,10 +1,11 @@
 import './App.css';
 import Bagde from './Bagdes/Bagdes';
+import Badges from './Bagdes/Badges';
 
 function App() {
   return (
     <div>
-      <Bagde/>
+      <Badges/>
     </div>
   );
 }
