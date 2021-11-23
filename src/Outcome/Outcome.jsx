@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 // } from "react-router-dom"; 
 function Outcome() {
 
-    const userType=1
+    const userType=2
 
     const outcomeList = [
         "C1. Maquetar una aplicación",

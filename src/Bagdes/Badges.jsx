@@ -49,8 +49,16 @@ useEffect(() => {
 
                   <th scope="row">Aleja y Javi lo hicieron</th>
                   <td>{e.name} {e.lastName}</td>
+
                   <td>{e.badges}</td>
 
+                  {/* .map(b =>{
+                    if (b===true){
+                      return ("star")
+                    }else{
+                      return ('nostar')
+                    }
+                  }) */}
                 </tr>
 
               ))
