@@ -1,12 +1,22 @@
 import './App.css';
-import Bagde from './Bagdes/Bagdes';
 import Badges from './Bagdes/Badges';
+import Outcome from './Outcome/Outcome';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom"; 
 
 function App() {
   return (
-    <div>
-      <Badges/>
-    </div>
+    <Router>
+
+    <Routes>
+    <Route path='/' element={<Badges/>}/>    
+    <Route path='/outcome/:id' element={<Outcome/>}/>    
+    </Routes>
+   
+    </Router>
   );
 }
 

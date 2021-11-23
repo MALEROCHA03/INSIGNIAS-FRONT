@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import * as controllerProject from "./controllerBadges";
+import * as controllerBadges from "./controllerBadges";
 // import {
 //   Link
 // } from "react-router-dom"; 
@@ -12,21 +12,21 @@ function Badges() {
     lastName:'',
 
 }
-const [projects, setProjects] = useState([]);
+const [badges, setBadgess] = useState([initialState]);
 
 useEffect(() => {
-  const listProject = async () => {
+  const list = async () => {
     try {
-      const res = await controllerProject.listBadges();
+      const res = await controllerBadges.listBadges();
       const data = await res.json();
-      setProjects(data);
-      console.log(projects);
+      setBadgess(data);
+      console.log(data);
     } catch (error) {
       console.log(error);
     }
   };
-  listProject();
-}, []);
+  list();
+}, [setBadgess]);
 
 
 
@@ -44,7 +44,7 @@ useEffect(() => {
           </thead>
           <tbody>
             {
-              projects.map(e => (
+              badges.map(e => (
                 <tr>
 
                   <th scope="row">Aleja y Javi lo hicieron</th>
