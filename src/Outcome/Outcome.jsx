@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 // } from "react-router-dom"; 
 function Outcome() {
 
-    const userType=2
+    const userType=1
 
     const outcomeList = [
         "C1. Maquetar una aplicación",
@@ -82,7 +82,7 @@ function Outcome() {
                        type="number" 
                        name={`C${index}`}
                        defaultValue='0'
-                       onChange={(e)=>{setCompetencies( array[index]=parseInt(e.target.value))}}
+                       onChange={(e)=>{array[index]=parseInt(e.target.value)}}
                        />
                        </p>  
                        )
