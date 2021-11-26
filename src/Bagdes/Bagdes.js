@@ -23,7 +23,7 @@ export default class BadgeList extends React.Component {
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Foto</th>
               <th scope="col">Nombre Alumno</th>
               <th scope="col">Insignia</th>
             </tr>
@@ -33,7 +33,7 @@ export default class BadgeList extends React.Component {
               this.state.data.map(e => (
                 <tr>
 
-                  <th scope="row">Aleja y Javi lo hicieron</th>
+                  <th scope="row"></th>
                   <td>{e.name} {e.lastName}</td>
                   <td>{e.badges}</td>
 
