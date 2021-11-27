@@ -49,7 +49,7 @@ function Badges() {
                             <td>{
                                 (e.badges ?
                                     e.badges.map(b=>(
-                                        <span>{b === "true" ? <i class="fab fa-old-republic"></i> : <i class="fas fa-times-circle"></i>}</span>
+                                        <span>{b === "true" ? <i class="fas fa-star"></i> : <i class="fas fa-times-circle"></i>}</span>
                                     ))
                                     :'')
                                 }
