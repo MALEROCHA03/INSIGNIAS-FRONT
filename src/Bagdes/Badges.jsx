@@ -28,11 +28,10 @@ function Badges() {
 
     return (
         
-        <div className="container" style={{padding: '5%'}}>
-          <div ></div>
+        <div   style={{padding: '5%', margin: '0 15%' }}>
             {console.log('primero')}
-            <table class="table">
-                <thead>
+            <table class="table" >
+                <thead style={{backgroundColor: 'rgb(255, 255, 255)'}}>
                     <tr style={{backgroundColor: 'rgb(255, 216, 8)'}}>
                         <th scope="col">Foto</th>
                         <th scope="col">Nombre Alumno</th>
